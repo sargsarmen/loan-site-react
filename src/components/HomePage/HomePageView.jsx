@@ -1,0 +1,77 @@
+import React from "react";
+import Header from "../Header";
+
+import styles from "./HomePage.module.css";
+
+const HomePageView = () => {
+  return (
+    <>
+      <Header />
+      <main>
+        <section className={styles.container}>
+          <div className={styles.titleCont}>
+            <div>
+              <h3 className={styles.title}>
+                We are connecting you with one of our lenders and lending partners.Our online application is secure.
+                After you submit the application, you may qualify for a short-term loan of up to $5,000. Short-term loan
+                not a solution for long-term financial issues.
+              </h3>
+            </div>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h2>Why Us</h2>
+          <p>
+            ??????.com offers an easy way to get money keeping your security. This ia a loan for everything from home
+            repairs to rental payments,from car repairs to other bills and expenses. Our loan connection service is free
+            and connecting you with one of trusted third party lenders and lending partners within a several minutes to
+            get you up to $5,000.To get the process started you need to fill out our secure online application
+          </p>
+        </section>
+        <section className={styles.section}>
+          <div className={styles.row}>
+            <div className={styles.card}>
+              <img src="https://payday-loans.cmsmasters.net/wp-content/uploads/2015/11/Без-имени-1.png" alt="1" />
+              <h3 className={styles.cardTitle}>Get Started</h3>
+              <div className={styles.cardContent}>
+                <p>
+                  Take a few minutes to fill out our simple loan request form. Don’t worry about your information being
+                  safe; our website is secured by the latest technology. We don’t ask for a lot of information, only
+                  what is necessary to get your loan request accepted. If your loan request is approved, we will try to
+                  find you a lender or lending partner right away. If we are unable to connect you with a lender or
+                  lending partner, you will find out immediatel
+                </p>
+              </div>
+            </div>
+            <div className={styles.card}>
+              <img src="https://payday-loans.cmsmasters.net/wp-content/uploads/2015/11/Без-имени-3.png" alt="2" />
+
+              <h3 className={styles.cardTitle}>Get Connected</h3>
+              <div className={styles.cardContent}>
+                <p>
+                  After we connect you with a third party lender or lending partner, you are redirected to their
+                  website. The lender or lending partner makes you a loan offer, presents you with terms, and asks for
+                  your approval. If you approve of the terms, you’re one step closer to getting your money. If you
+                  change your mind and don’t want the loan, simply decline it.
+                </p>
+              </div>
+            </div>
+            <div className={styles.card}>
+              <img src="https://payday-loans.cmsmasters.net/wp-content/uploads/2015/11/Без-имени-2.png" alt="3" />
+              <h3 className={styles.cardTitle}>Get Your Money</h3>
+              <div className={styles.cardContent}>
+                <p>
+                  Once you agree to the lender’s terms and are approved for a loan, your money will be deposited into
+                  your personal bank account, usually as soon as the next business day. It couldn’t be simpler to get
+                  your money!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+};
+
+export default HomePageView;

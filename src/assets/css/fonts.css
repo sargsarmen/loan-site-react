@@ -1,0 +1,38 @@
+/*font-face*/
+@font-face {
+  font-family: neuzeitgro-light;
+  src: url("../fonts/neuzeitgro-lig.woff2") format("woff2"), url("../fonts/neuzeitgro-lig.woff") format("woff"),
+    url("../fonts/neuzeitgro-lig.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: neuzeitgro-regular;
+  src: url("../fonts/neuzeitgro-reg.woff2") format("woff2"), url("../fonts/neuzeitgro-reg.woff") format("woff"),
+    url("../fonts/neuzeitgro-reg.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: neuzeitgro-bold;
+  src: url("../fonts/neuzeitgro-bol.woff2") format("woff2"), url("../fonts/neuzeitgro-bol.woff") format("woff"),
+    url("../fonts/neuzeitgro-bol.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: neuzeitgro-black;
+  src: url("../fonts/neuzeitgro-bla.woff2") format("woff2"), url("../fonts/neuzeitgro-bla.woff") format("woff"),
+    url("../fonts/neuzeitgro-bla.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+/*font-face*/
