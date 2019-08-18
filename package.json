@@ -1,8 +1,11 @@
 {
-  "name": "loan-site",
+  "name": "loan-site-react",
   "version": "0.1.0",
   "description": "Loan Site",
+  "homepage": "https://sargsarmen.github.io/loan-site-react",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --config ./webpack.config.dev.js  --http",
     "build": "webpack --config webpack.config.prod.js"
   },
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
+    "gh-pages": "^2.1.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1",
