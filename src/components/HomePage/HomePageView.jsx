@@ -47,6 +47,7 @@ const HomePageView = () => {
         </div>
       </section>
       <section className={styles.section}>
+        <h2>How It Works</h2>
         <div className={styles.row}>
           <div className={styles.card}>
             <img src="https://payday-loans.cmsmasters.net/wp-content/uploads/2015/11/Без-имени-1.png" alt="1" />

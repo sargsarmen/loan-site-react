@@ -20,6 +20,11 @@
 .sliderWrapp > p {
   padding-bottom: 10px;
 }
+.sliderWrapp > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
 .inputWrapp {
   display: flex;
   flex-direction: column;

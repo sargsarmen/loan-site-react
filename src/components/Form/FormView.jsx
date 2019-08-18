@@ -11,7 +11,11 @@ const FormView = () => {
       </div>
       <div className={styles.sliderWrapp}>
         <p>Drag the slider below to the amount you&apos;d like to borrow</p>
-        <input type="range" min="100" max="5000" value="100" />
+        <input type="range" min="100" max="5000" defaultValue="2000" />
+        <div>
+          <p>100$</p>
+          <p>5000$</p>
+        </div>
       </div>
       <div className={styles.inputWrapp}>
         <div className={styles.inputRow}>
