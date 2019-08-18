@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.titleWrapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: neuzeitgro-bold;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.sliderWrapp {
+  font-family: neuzeitgro-light;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.sliderWrapp > p {
+  padding-bottom: 10px;
+}
+.inputWrapp {
+  display: flex;
+  flex-direction: column;
+}
+.inputRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.inputRow > input:not(:last-child) {
+  margin-right: 20px;
+}
+.inputRow > input {
+  flex: 1;
+}
+.input {
+  height: 40px;
+  padding: 2px 5px;
+  border-width: 1px;
+  border-color: #c3c3c3;
+  color: #545764;
+  border-style: solid;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.button {
+  color: #ffffff;
+  border-width: 2px;
+  border-color: #fb9060;
+  border-radius: 5px;
+  padding: 15px 22px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fb9060;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb9060), to(#fb9060));
+  background-image: -webkit-linear-gradient(top, #fb9060, #fb9060);
+  background-image: -moz-linear-gradient(top, #fb9060, #fb9060);
+  background-image: -o-linear-gradient(top, #fb9060, #fb9060);
+  background-image: -ms-linear-gradient(top, #fb9060, #fb9060);
+  background-image: linear-gradient(top, #fb9060, #fb9060);
+}
+.button:hover {
+  color: #ffffff;
+  background-color: #d17951;
+  border-color: #d17951;
+}
+.button:active {
+  color: #333333;
+  background-color: #fb9060;
+  border-color: #fb9060;
+}
+.agree {
+  text-align: center;
+  padding: 20px;
+}

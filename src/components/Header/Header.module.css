@@ -18,10 +18,12 @@
 }
 .logo {
   width: 188px;
-  height: 43px;
   overflow: hidden;
   z-index: 900;
   transition: none;
+}
+.logo img {
+  width: 188px;
 }
 .menu {
   width: 50%;
@@ -39,7 +41,7 @@
   transition: 0.3s;
 }
 .menuItem:hover {
-  background: #039;
+  background: #fb9060;
 }
 .menuLink {
   color: #fff;
