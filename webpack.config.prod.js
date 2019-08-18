@@ -12,7 +12,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "/build"),
-    publicPath: "/",
+    publicPath: "/loan-site-react/",
     filename: "bundle_[hash:5].js"
   },
   module: {
