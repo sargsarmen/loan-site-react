@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import * as pathnames from "../../constants/pathnames";
 
 import styles from "./Form.module.css";
 
@@ -31,15 +33,15 @@ const FormView = () => {
       <div className={styles.agree}>
         By clicking &apos;Get Started&apos;, I consent and agree to the
         {"  "}
-        <a href="/">E-Consent,</a>
+        <Link to={pathnames.eConsent}>E-Consent,</Link>
         {"  "}
-        <a href="/">Privacy Policy,</a>
+        <Link to={pathnames.privacyPolicy}>Privacy Policy,</Link>
         {"  "}
-        <a href="/">Terms & Conditions,</a>
+        <Link to={pathnames.termsConditions}>Terms & Conditions,</Link>
         {"  "}
-        <a href="/">Responsible Lending & Marketing</a>
+        <Link to={pathnames.privacyPolicy}>Responsible Lending & Marketing,</Link>
         {" and "}
-        <a href="/">Legal Disclaimers.</a>
+        <Link to={pathnames.legalDisclaimer}>Legal Disclaimers,</Link>
       </div>
     </div>
   );

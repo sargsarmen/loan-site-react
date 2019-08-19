@@ -5,7 +5,7 @@ import styles from "./HomePage.module.css";
 
 const HomePageView = () => {
   return (
-    <main>
+    <>
       <section className={styles.container}>
         <div className={styles.overlay}>
           <div className={styles.formCont}>
@@ -88,7 +88,7 @@ const HomePageView = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import * as pathnames from "../../constants/pathnames";
 
 import headerStyles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
@@ -7,26 +9,26 @@ const HeaderView = () => {
   return (
     <header className={headerStyles.header}>
       <div className={headerStyles.wrapper}>
-        <a href="/" className={headerStyles.logo}>
+        <Link to={pathnames.home} className={headerStyles.logo}>
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className={headerStyles.menu}>
           <div className={headerStyles.menuItem}>
-            <a className={headerStyles.menuLink} href="/">
+            <Link to={pathnames.privacyPolicy} className={headerStyles.menuLink}>
               HOW IT WORKS
-            </a>
+            </Link>
           </div>
 
           <div className={headerStyles.menuItem}>
-            <a className={headerStyles.menuLink} href="/">
+            <Link to={pathnames.privacyPolicy} className={headerStyles.menuLink}>
               ABOUT US
-            </a>
+            </Link>
           </div>
 
           <div className={headerStyles.menuItem}>
-            <a href="/" className={headerStyles.menuLink}>
+            <Link to={pathnames.ratesAndFees} className={headerStyles.menuLink}>
               RATES AND FEES
-            </a>
+            </Link>
           </div>
         </div>
         <a className={headerStyles.getStarted} href="/">

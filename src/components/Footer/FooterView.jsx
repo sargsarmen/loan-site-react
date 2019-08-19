@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import * as pathnames from "../../constants/pathnames";
 
 import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.png";
@@ -11,24 +13,24 @@ const FooterView = () => {
       <div className={styles.wrapper}>
         <div className={styles.links}>
           <div>
-            <a href="/" className={styles.logo}>
+            <Link className={styles.logo} to={pathnames.privacyPolicy}>
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="/">ABOUT US</a>
-            <a href="/">HOW IT WORKS</a>
-            <a href="/">FAQ</a>
+            <Link to={pathnames.privacyPolicy}>ABOUT US</Link>
+            <Link to={pathnames.privacyPolicy}>HOW IT WORKS</Link>
+            <Link to={pathnames.privacyPolicy}>FAQ</Link>
           </div>
           <div>
-            <a href="/">E-CONSENT</a>
-            <a href="/">PRIVACY POLICY</a>
-            <a href="/">TERMS & CONDITIONS</a>
+            <Link to={pathnames.eConsent}>E-CONSENT</Link>
+            <Link to={pathnames.privacyPolicy}>PRIVACY POLICY</Link>
+            <Link to={pathnames.termsConditions}>TERMS & CONDITIONS</Link>
           </div>
           <div>
-            <a href="/">LEGAL DISCLAIMERS</a>
-            <a href="/">CONTACT US</a>
-            <a href="/">UNSUBSCRIBE</a>
+            <Link to={pathnames.legalDisclaimer}>LEGAL DISCLAIMERS</Link>
+            <Link to={pathnames.contactUs}>CONTACT US</Link>
+            <Link to={pathnames.unsubscribe}>UNSUBSCRIBE</Link>
           </div>
         </div>
         <div className={styles.copyright}>
