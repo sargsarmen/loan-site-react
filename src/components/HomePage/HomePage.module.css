@@ -104,11 +104,35 @@
   padding: 25px 50px;
   text-align: center;
 }
-@media (max-width: 1650px) {
+
+@media (max-width: 1650px) and (min-width: 1201px) {
   .formCont {
     width: 35%;
   }
   .factsCont {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 771px) {
+  .formCont {
+    width: 45%;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .formCont {
+    width: 80%;
+    margin-right: auto;
+  }
+  .row {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section > p {
+    max-width: 100%;
   }
 }
