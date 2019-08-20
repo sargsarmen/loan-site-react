@@ -60,6 +60,9 @@
   white-space: nowrap;
   padding: 0 25px;
 }
+.hidden {
+  display: none;
+}
 .menuItem:hover .menuLink {
   color: #fff;
 }
@@ -73,8 +76,8 @@
   font-size: 19px;
   height: 50px;
   background-color: #fff;
-  color: #fe002a;
-  border: 1px solid #fe002a;
+  color: #fb9060;
+  border: 1px solid #fb9060;
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,7 +91,7 @@
 .button:before {
   content: "";
   position: absolute;
-  background-color: #fe002a;
+  background-color: #fb9060;
   left: 0;
   top: 0;
   width: 0;
@@ -103,6 +106,58 @@
 .button:hover {
   color: #fff;
   background-color: transparent;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  background-color: #fb9060;
+  top: 18px;
+  z-index: 1;
+  right: 12px;
+  border-radius: 4px;
+  display: none;
+  border: 0px;
+}
+
+.bar {
+  background-color: #fff;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.toggle .bar:last-child {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.toggle.active .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.toggle.active .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 1200px) and (min-device-width: 771px) {
@@ -125,14 +180,52 @@
 }
 
 @media screen and (max-width: 770px) {
-  .menu {
+  .menuWrap {
     display: none;
+    width: 100%;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .show {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menuItem {
+    width: 100%;
+  }
+  .menuItem:after {
+    border: 1px solid gray;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .menuItem:hover {
+    background: #fb9060;
   }
   .getStarted {
     display: none;
   }
-  .menuWrap {
-    width: auto;
+  .hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden:hover {
+    background: #fff;
+  }
+  .hidden .button {
+    z-index: 100;
+  }
+  .toggle {
+    display: block;
   }
 }
 /* HEADER */
