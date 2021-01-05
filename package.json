@@ -15,7 +15,7 @@
     "@fortawesome/pro-light-svg-icons": "^5.9.0",
     "@fortawesome/pro-regular-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "classnames": "2.2.6",
     "prop-types": "15.7.2",
     "react": "16.8.6",
